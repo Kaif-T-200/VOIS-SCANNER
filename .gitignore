@@ -1,0 +1,35 @@
+# Environments
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Databases & History
+backend/scan_history.json
+backend/database/monitor_configs.json
+*.db
+*.sqlite3
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+.project
+.settings/
+
+# Output
+backend/reports/*.pdf
+backend/reports/*.csv
+backend/reports/*.json
+backend/assets/temp/
