@@ -2,11 +2,11 @@ services:
   - type: web
     name: vois-scanner
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 10000
+    buildCommand: "python -m pip install --upgrade pip && python -m pip install -r requirements.txt"
+    startCommand: "python -m uvicorn backend.main:app --host 0.0.0.0 --port 10000"
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10.0
+        value: 3.10.12
       - key: HOST
         value: 0.0.0.0
       - key: PORT
